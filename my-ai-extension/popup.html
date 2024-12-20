@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>AI Summarizer</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      margin: 10px;
+      width: 250px;
+    }
+    #summaryResult {
+      margin-top: 10px;
+      font-size: 0.9em;
+      color: #333;
+    }
+    button {
+      width: 100%;
+      padding: 5px;
+      font-size: 1em;
+      cursor: pointer;
+      margin-bottom: 10px;
+    }
+    #loading {
+      display: none;
+      font-size: 0.85em;
+      color: #555;
+    }
+  </style>
+</head>
+<body>
+  <h3>AI Summarizer</h3>
+  <p>Select text on a webpage, then click below.</p>
+  <button id="summarizeBtn">Summarize Highlighted Text</button>
+  <div id="loading">Summarizing, please wait...</div>
+  <div id="summaryResult"></div>
+  <script src="popup.js"></script>
+</body>
+</html>
+
